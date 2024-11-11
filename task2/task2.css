@@ -1,0 +1,85 @@
+/* task2.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFEFEF;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.display {
+    font-size: 2rem;
+    color: #333;
+    background-color: #f0f0f5;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #F3D0D7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.controls button:hover:not(:disabled) {
+    background-color: #e99cd2;
+}
+
+.laps {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.laps h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.laps li {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
